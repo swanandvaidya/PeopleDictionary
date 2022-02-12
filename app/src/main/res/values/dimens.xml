@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- default margin for layout -->
+    <dimen name="layout_default_margin">16dp</dimen>
+    <dimen name="layout_match_parent">0dp</dimen>
+
+    <!-- different margins and paddings -->
+    <dimen name="btn_save_margin_top">48dp</dimen>
+    <dimen name="et_mobile_no_margin_top">24dp</dimen>
+    <dimen name="btn_save_padding">12dp</dimen>
+
+    <dimen name="text_size_primary">16sp</dimen>
+</resources>
