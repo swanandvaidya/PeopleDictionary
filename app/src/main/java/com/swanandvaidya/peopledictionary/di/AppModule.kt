@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.room.Room
 import com.swanandvaidya.peopledictionary.data.database.AppDatabase
 import com.swanandvaidya.peopledictionary.data.dao.UserDao
-import com.swanandvaidya.peopledictionary.util.AppConstants
+import com.swanandvaidya.peopledictionary.util.AppConstants.DB_NAME
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -23,7 +23,7 @@ object AppModule {
         Room.databaseBuilder(
             context,
             AppDatabase::class.java,
-            AppConstants.DB_NAME
+            DB_NAME
         ).build()
 
     @Singleton

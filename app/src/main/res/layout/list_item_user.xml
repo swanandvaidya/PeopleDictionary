@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<layout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="userModel"
+            type="com.swanandvaidya.peopledictionary.data.User"/>
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="@dimen/layout_default_margin">
@@ -12,6 +20,7 @@
         android:layout_width="@dimen/layout_match_parent"
         android:layout_height="wrap_content"
         android:textSize="@dimen/text_size_primary"
+        android:text="@{userModel.name}"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -21,9 +30,10 @@
         android:layout_width="@dimen/layout_match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/layout_default_margin"
-        android:text="User's Mobile number"
+        android:text="@{userModel.mobileNumber}"
         android:textSize="@dimen/text_size_primary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/tv_user_name"
         app:layout_constraintTop_toBottomOf="@+id/tv_user_name" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

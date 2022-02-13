@@ -1,4 +1,4 @@
-package com.swanandvaidya.peopledictionary.presentation.userdetail.viewmodel
+package com.swanandvaidya.peopledictionary.viewmodels.userdetail
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
