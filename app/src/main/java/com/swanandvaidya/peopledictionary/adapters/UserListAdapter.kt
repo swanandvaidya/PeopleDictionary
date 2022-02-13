@@ -1,4 +1,4 @@
-package com.swanandvaidya.peopledictionary.presentation.user.adapter
+package com.swanandvaidya.peopledictionary.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -26,13 +26,10 @@ class UserListAdapter : RecyclerView.Adapter<UserListAdapter.UserViewHolder>() {
         return userList.size
     }
 
-    inner class UserViewHolder(private val itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class UserViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         fun bind(user: User) {
-            userBinding.apply {
-                tvUserName.text = user.name
-                tvUserMobile.text = user.mobileNumber.toString()
-            }
+            userBinding.userModel = user
         }
     }
 

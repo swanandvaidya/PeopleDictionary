@@ -10,7 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.google.android.material.snackbar.Snackbar
 import com.swanandvaidya.peopledictionary.R
 import com.swanandvaidya.peopledictionary.databinding.FragmentUserDetailBinding
-import com.swanandvaidya.peopledictionary.presentation.userdetail.viewmodel.UserDetailViewModel
+import com.swanandvaidya.peopledictionary.viewmodels.userdetail.UserDetailViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -35,7 +35,7 @@ class UserDetailFragment : Fragment() {
         // perform fab action click
         performAction()
 
-        // save user into database
+        // observe the livedata
         setUpObservables()
 
     }

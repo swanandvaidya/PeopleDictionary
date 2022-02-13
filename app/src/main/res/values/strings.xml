@@ -13,5 +13,6 @@
 
     <!-- error strings -->
     <string name="text_error_invalid_user">Enter valid details</string>
+    <string name="text_no_data">Currently no data is available, Please add some data</string>
 
 </resources>
